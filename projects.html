@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Chen</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="top"></div>
+    <nav>
+      <div class="container">
+        <a href="/" class="float-left blue-text">home</a>
+        <div class="float-right">
+          <a class="active" href="projects.html">projects</a>
+          <a href="photography.html">photography</a>
+          <a href="#">before & afters</a>
+          <a href="#">about me</a>
+        </div>
+        <i id="nav-dropdown-button" class="fas fa-bars"></i>
+        <div class="clearfix"></div>
+        <ul class="dropdown-items">
+          <li><a class="active" href="projects.html">projects</a></li>
+          <li><a href="photography.html">photography</a></li>
+          <li><a href="#">before & afters</a></li>
+          <li><a href="#">about me</a></li>
+        </ul>
+        <div class="nav-border"></div>
+      </div>
+    </nav>
+    <div class="clearfix"></div>
+    <div class="container content">
+      <h1 class="primary-text blue-text">Projects</h1>
+
+      <div class="projects-overview" id="projects-overview">
+        <a href="#" class="project-anchor" location="my-tasks"><img src="images/mytasks-logo.png"/></a>
+        <a href="#" class="project-anchor" location="tweet-anywhere"><img src="images/tweet-anywhere-logo.png"/></a>
+      </div>
+
+      <div class="project-container" id="my-tasks">
+        <a href="#" title="overview" class="fas fa-chevron-up project-anchor" location="top"></a>
+        <h1 class="secondary-text grey-text">myTasks</h1>
+        <p class="blue-text">node | express | REST APIs | mongo</p>
+        <div class="project-content">
+          <img src="images/my-tasks-macbook.png"/>
+          <p>myTasks is a web app I created to help users manage and organize
+            tasks that they have to complete. Whether you're a student, full-time
+             employee, or just an average joe with lots of stuff to keep track
+              of, mySites has something in it for you. Create an account now to
+              see how productive you can be.
+            <br></br>
+          </p>
+          <a href="https://github.com/austichen/my-tasks" target="_blank" class="btn">github</a>
+          <a href="http://my-tasks-project.herokuapp.com/" target="_blank" class="btn">view</a>
+        </div>
+        <a href="#" title="tweet-anywhere" class="fas fa-chevron-down project-anchor" location="tweet-anywhere"></a>
+      </div>
+
+      <div class="project-container" id="tweet-anywhere">
+        <a href="#" title="my-tasks" class="fas fa-chevron-up project-anchor" location="my-tasks"></a>
+        <h1 class="secondary-text grey-text">Tweet Anywhere</h1>
+        <p class="blue-text">react | google maps & twitter APIs | node | mongo</p>
+        <div class="project-content">
+          <img src="images/tweet-anywhere-mac.png"/>
+          <p>Tweet Anywhere is a web app that allows users to search for Tweets
+            from any location around the globe, view them on Twitter, and save
+            them to a public collection if they really like it. It is my first
+            attempt at building a web app, with the primary goal being to better
+            familiarize myself with Reactjs. In addition to React, Tweet
+            Anywhere is built with a Node/Express/MongoDB back-end, mainly for
+            creating RESTful APIs to access the Tweet database.
+            <br></br>
+          </p>
+          <a href="https://github.com/austichen/twitter-app" target="_blank" class="btn">github</a>
+          <a href="http://tweet-anywhere.herokuapp.com/" target="_blank" class="btn">view</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
