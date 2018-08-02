@@ -16,8 +16,8 @@ p {
   color: #4dd0e1;
   border:2px solid #4dd0e1;
   background-color: white;
-  width: 80px;
-  padding: 10px 0 10px 0;
+  min-width: 70px;
+  padding: 10px 5px 10px 5px;
   box-sizing: border-box;
   margin-right: 10px;
   cursor:
@@ -38,7 +38,7 @@ p {
   animation-name: homecontent;
   opacity: 0;
   animation-duration: 1.5s;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -103,14 +103,14 @@ p {
 }
 
 .social-links {
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 0;
   list-style-type: none;
 }
 
 .social-links li{
   display: inline;
-  font-size: 18px;
+  font-size: 20px;
   color: #f4f4f4;
   padding: 0 5px 0 5px;
   transition: color 0.3s;
@@ -147,7 +147,7 @@ nav .container i{
 .dropdown-items {
   padding-left: 0;
   list-style-type: none;
-  background-color: rgba(76, 207, 224, 0.65);
+  background-color: #4dd0e1;
   display: none;
   animation-name: fade-in;
   animation-duration: .5s;
@@ -155,22 +155,31 @@ nav .container i{
   animation-fill-mode: forwards;
   position: absolute;
   right:10vw;
+  border: 1px solid #f4f4f4;
+  border-top: none;
+  border-bottom: none;
 }
 
 .dropdown-items a {
-    color: #f4f4f4;
+    color: white;
+    font-weight: 100;
 }
 
 .dropdown-items li {
   text-align: right;
   width: 100%;
   display: block;
-      border-bottom: 1px solid;
-      border-color: #d6d6d6;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .clearfix{
   clear: both;
+}
+
+.hide-text {
+  display: none;
 }
 
 .nav-border {
@@ -237,13 +246,14 @@ nav a:hover, nav .active {
 
 .gallery img {
   width:100%;
-  margin:0;
+  box-sizing: border-box;
+  padding:1px;
   display: block;
-  padding:0;
 }
 
 .show-dropdown {
   display: block;
+  overflow: auto;
 }
 
 /*PROJECTS */
@@ -294,7 +304,7 @@ nav a:hover, nav .active {
 }
 
 .project-container img {
-  width: 450px;
+  max-width: 450px;
   float: left;
 }
 
@@ -305,6 +315,48 @@ nav a:hover, nav .active {
 
 .project-container div p {
   margin-top: 30px;
+}
+
+
+/* ABOUT ME */
+
+
+.aboutme-container {
+    padding-top: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+}
+
+.aboutme-container img {
+  border-radius: 50%;
+  max-width: 300px;
+  height: 300px;
+  margin: 0 40px;
+}
+
+.aboutme-container p {
+  margin-top: 15px;
+  line-height: 1.4rem;
+}
+
+#hidden-bio-text {
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.toggle-bio-text {
+  color: #4dd0e1;
+  cursor: pointer;
+}
+
+.toggle-bio-text:hover {
+  color: #d6d6d6;
 }
 
 /* ANIMATIONS */
@@ -344,9 +396,10 @@ nav a:hover, nav .active {
     display: inline-block;
     cursor: pointer;
   }
-  .project-container img {
+  .project-container img, .aboutme-container img {
     width: 100%;
-    margin: none;
+    height: auto;
+    margin: 0px;
   }
 }
 
@@ -367,7 +420,14 @@ nav a:hover, nav .active {
   .project-container .project-anchor{
     margin-bottom: 10px;
   }
+  .aboutme-container {
+    text-align: center;
+    display: block;
+  }
 
+  .aboutme-container p{
+    text-align: left;
+  }
 }
 
 
