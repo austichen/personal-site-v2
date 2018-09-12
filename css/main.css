@@ -20,7 +20,6 @@ p {
   padding: 10px 5px 10px 5px;
   box-sizing: border-box;
   margin-right: 10px;
-  cursor:
 }
 
 .btn:hover{
@@ -263,6 +262,10 @@ nav a:hover, nav .active {
   top:0;
 }
 
+.projects-container a {
+  cursor: pointer;
+}
+
 .projects-overview {
   margin: 0 auto;
   padding-top: 100px;
@@ -401,9 +404,13 @@ nav a:hover, nav .active {
     height: auto;
     margin: 0px;
   }
+  .aboutme-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1300px) {
   .project-container div {
     padding-left: 0px;
     padding-right: 0px;
