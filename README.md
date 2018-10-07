@@ -1,3 +1,3 @@
 ## personal site
 
-Made with pure HTML/CSS and a sprinkle of jQuery.
+Personal website serving as a photography & project portfolio. Check it out at http://austinhxchen.com!
